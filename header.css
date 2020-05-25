@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#Header{
+    height: 1%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+#logo{
+    width: 3%;
+    height: 3%;
+    margin-left: 0.5%;
+    margin-top: 1%;
+    
+    float: left;
+}
+a {
+    text-decoration: none;
+}
+#navMenu {
+    display: block;
+    width: 100%;
+    height: 10%;
+    
+  }
+
+#navMenu ul{
+    padding: 1em 0;
+    background: black;
+    list-style: none; 
+    float: right;
+    margin-right: 5%;
+    font-size: 13px;
+    
+    
+}
+#navMenu a {
+  padding: 1em;
+  background: black;
+  border-right: 1px solid white;
+  color: white;
+}
+#navMenu li {
+    display: inline;
+}
