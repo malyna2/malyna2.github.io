@@ -1,0 +1,12 @@
+#content{
+    width: 90%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.goods{
+    display: flex;
+    width: 10%;
+    height: 15%;
+
+}
