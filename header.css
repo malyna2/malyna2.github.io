@@ -1,7 +1,6 @@
 body{
     margin: 0;
     padding: 0;
-    scrollbar-width: 100px;
 }
 #header{
     width: 100%;
@@ -19,7 +18,7 @@ body{
     display: flex;
     
 }
-#navMenu .noneborder{
+#navMenu #noneborder{
     border: none;
 }
 #logo{
@@ -42,7 +41,7 @@ a {
     width: 100%;
   }
 
-#navMenu ul{
+#navMenu > ul{
     padding: 1em 0;
     background: black;
     list-style: none; 
@@ -73,4 +72,7 @@ a {
 #navMenu #rightborder{
  border-right: 1px solid white;
  border-left: none;
+}
+#noneborder:hover, #rightborder:hover, #bborder:hover,li:hover{
+    background-color: rgb(68, 68, 68);
 }
