@@ -34,4 +34,4 @@ img{
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-gap: 10px;
 }
-@media screen and (min-width: 800px)
+@media screen and (min-width: 800px){}
