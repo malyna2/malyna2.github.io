@@ -4,31 +4,72 @@
 <head>
 	<title>Easy Walking</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="header.css">
-	
+	<link rel="stylesheet" type="text/css" href="preloader.css">
+	<meta name="viewport" content="width=device-width">
 </head>
 
+
 <body>
+	<!-- PRELOADER -->
+	<div id="preloader" >
+		<div class="loader"></div>
+	</div>
+	<!-- PRELOADER END-->
+
+
+	<!-- HEADER MENU FOR DESKTOPS-->
 	<div id="header">
+		<div class="container">
+			<div class="header-body">
 		<a href="index.html">
 			<div id="productive">
-				<h3 id="companyname">Easy Walking</h3>
+				<img id="logo" src="https://avatarko.ru/img/kartinka/1/avatarko_anonim.jpg">
+				<h3 id="companyname">Gray Tower</h3>
 			</div>
 		</a>
 		<nav id="navMenu">
 			<ul id="menu">
-				<li><a id="noneborder" href="object.html">Об'єкти</a></li>
-				<li><a id="bborder" href="assortment.html">Асортимент</a></li>
+				<li><a id="noneborder" href="objects.html">Об'єкти</a></li>
+				<li><a id="border" href="assortment.html">Асортимент</a></li>
 				<li><a id="rightborder" href="technologies.html">Наші технології</a></li>
 				<li><a id="noneborder" href="forPartners.html">Для партнерів</a></li>
 			</ul>
 		</nav>
 		<h2 id="phonenumber"><b>+380000000000</b></h2>
+		</div>
 	</div>
+	</div>
+
+	<!-- END DESKTOP MENU-->
+	
+	<!-- START SMARPHONES MENU-->
+	<div class="header-burger">
+		<a href="index.html" class="active">GREY TOWER</a>
+		<div id="navMenu-burger">
+			<a href="objects.html">Об'єкти</a>
+			<a href="assortment.html">Асортимент</a>
+			<a href="technologies.html">Наші технології</a>
+			<a href="forPartners.html">Для партнерів</a>
+		</div>
+		<a class="icon" onclick="burger()">
+		  <i class="fa fa-bars"></i>
+		</a>
+	  </div>
+	<!-- END SMARPHONES MENU-->
+	
+
 	<div id="content">
 		<img src="Pictures/main.jpg" alt="">
-	</div>
+	
 	<div id="textCenter">Easy<br>     Walking</div>
+</div>
+
+	<!-- Scripts-->
+	<script src="preloader.js"></script>
+	<script src="burger.js"></script>
+		<!-- Scripts End-->
 </body>
 
 </html>
