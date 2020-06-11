@@ -15,7 +15,6 @@ img{
 }
 .price{
     padding-right: 25px;
-    padding-top: auto;
     text-align: end;
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -26,12 +25,30 @@ img{
     text-align: center;
     list-style: none;
     width: 350px;
-    height: auto;
+    height: 420px;
 }
 .shop {
-    margin: 20px auto;
+    padding: 20px auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-gap: 10px;
+    align-items: center;
 }
-@media screen and (min-width: 800px){}
+@media screen and (max-width: 1080px) and (orientation:portrait) and (min-width: 768px){
+    .shop{
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        padding: 20px 20px;
+        margin: 0;
+        align-items: center;
+    }
+    .container{
+        width: 450px;
+        height: 600px;
+    }
+    .describtion{
+        font-size: 45px;
+    }
+    .price{
+        font-size: 40px;        
+    }
+}

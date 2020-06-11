@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Hairline&family=Bungee+Inline&family=Bungee+Outline&display=swap');
 body{
+    font-family: 'Arimo', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -22,13 +25,18 @@ body{
     border: none;
 }
 #logo{
-    width: 100px;
+    width: 10px;
     height: 50px;
     margin: 0;
 }
 #companyname{
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
+    width: 500px;
+    color: rgb(255, 255, 255);
+    font-family: 'Bungee', cursive;
+    /* font-family: 'Bungee Hairline', cursive; */
+    /* font-family: 'Bungee Inline', cursive; */
+    font-family: 'Bungee Outline', cursive;
+    font-size: 15px;
 }
 a {
     text-decoration: none;
