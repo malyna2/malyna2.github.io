@@ -3,20 +3,39 @@ body{
     padding: 0;
 }
 #header{
-    width: 100%;
-    background-color: black;
+   width: 100%;
+   height: 80px;
+   top: 0;
+   left: 0;
+   background-color: black;
+}
+
+.header-body{
+    position: relative;
     display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+
+}
+
+.conteiner{
+   margin: 0px auto;
+   padding: 0px 10px;
 }
 #productive{
+    position: relative;
     margin-top: auto;
     margin-bottom: auto;
     justify-content: flex-start;
     align-items: center;
     display: flex;
+    z-index: 3;
     
+}
+#productive img{
+    max-width: 100%;
+    display: block;
 }
 #navMenu #noneborder{
     border: none;
@@ -39,6 +58,8 @@ a {
     justify-content: center;
     align-items: center;
     width: 100%;
+    position: relative;
+    z-index: 3;
   }
 
 #navMenu > ul{
@@ -68,11 +89,56 @@ a {
     margin-right: 2%;
     margin-top: auto;
     margin-bottom: auto;
+    position: relative;
+    z-index: 3;
 }
 #navMenu #rightborder{
  border-right: 1px solid white;
  border-left: none;
 }
-#noneborder:hover, #rightborder:hover, #bborder:hover,li:hover{
+#noneborder:hover, #rightborder:hover, #border:hover,li:hover{
     background-color: rgb(68, 68, 68);
+}
+
+.header-burger{
+    display: none;
+}
+
+@media (orientation : portrait) {
+
+    #header{
+        display: none;
+    }
+    .header-burger{
+        width: 100%;
+        display: block;
+        color: white;
+        background-color: black;
+        position: relative;
+        margin-top: 0;
+        font-size: 18px;
+        animation: 3s linear 1s slidein;
+    }
+    .header-burger #navMenu-burger{
+       display: none;
+    }
+    .header-burger a{
+        background-color: black;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    .active{
+        background-color: black;
+        color: white;
+    }
+    .header-burger .icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
 }
