@@ -44,18 +44,9 @@ body{
     border: none;
 }
 #logo{
-    width: 10px;
-    height: 50px;
-    margin: 0;
-}
-#companyname{
-    width: 500px;
-    color: rgb(255, 255, 255);
-    font-family: 'Bungee', cursive;
-    /* font-family: 'Bungee Hairline', cursive; */
-    /* font-family: 'Bungee Inline', cursive; */
-    font-family: 'Bungee Outline', cursive;
-    font-size: 15px;
+    width: 200px;
+    height: auto;
+    margin: 10px;
 }
 a {
     text-decoration: none;
@@ -76,7 +67,8 @@ a {
     list-style: none; 
     text-align: center;
     margin-right: 5%;
-    font-size: 13px;    
+    font-size: 13px;
+    margin: 0 50px;
 }
 #navMenu a {
   padding: 1em;
@@ -116,6 +108,10 @@ a {
 
     #header{
         display: none;
+    }
+    #logo{
+        width: 200px;
+        height: 125px;
     }
     .header-burger{
         width: 100%;
