@@ -6,40 +6,40 @@
 	<link rel="stylesheet" type="text/css" href="assortment.css">
 	<link rel="stylesheet" type="text/css" href="header.css">
 	<link rel="stylesheet" type="text/css" href="preloader.css">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css%22%3E">
 </head>
 
 <body>
 	<!-- PRELOADER -->
-	<div id="preloader" >
+	<!-- <div id="preloader" >
 		<div class="loader"></div>
-	</div>
+	</div> -->
 	<!-- PRELOADER END-->
-	
+
 	<!-- HEADER MENU FOR DESKTOPS-->
 	<div id="header">
 		<div class="container">
 			<div class="header-body">
-		<a href="index.html">
-			<div id="productive">
-				<img id="logo" src="Pictures/logo.png">
+				<a href="index.html">
+					<div id="productive">
+						<img id="logo" src="Pictures/logo.png">
+					</div>
+				</a>
+				<nav id="navMenu">
+					<ul id="menu">
+						<li><a href="object.html">Об'єкти</a></li>
+						<li><a class="current" href="assortment.html">Асортимент</a></li>
+						<li><a href="technologies.html">Наші технології</a></li>
+						<li><a href="forPartners.html">Для партнерів</a></li>
+					</ul>
+				</nav>
+				<h2 class="current" id="phonenumber"><b>+380000000000</b></h2>
 			</div>
-		</a>
-		<nav id="navMenu">
-			<ul id="menu">
-				<li><a id="noneborder" href="object.html">Об'єкти</a></li>
-				<li><a id="border" href="assortment.html">Асортимент</a></li>
-				<li><a id="rightborder" href="technologies.html">Наші технології</a></li>
-				<li><a id="noneborder" href="forPartners.html">Для партнерів</a></li>
-			</ul>
-		</nav>
-		<h2 id="phonenumber"><b>+380000000000</b></h2>
 		</div>
-	</div>
 	</div>
 
 	<!-- END DESKTOP MENU-->
-	
+
 	<!-- START SMARPHONES MENU-->
 	<div class="header-burger">
 		<a href="index.html" class="active">GREY TOWER</a>
@@ -50,39 +50,54 @@
 			<a href="forPartners.html">Для партнерів</a>
 		</div>
 		<a class="icon" onclick="burger()">
-		  <i class="fa fa-bars"></i>
+			<i class="fa fa-bars"></i>
 		</a>
-	  </div>
+	</div>
 	<!-- END SMARPHONES MENU-->
-	<div id="content">
+	<div id="content" >
 		<ul class="shop">
-			<li class="container">
-				<img src="Pictures/plate4.webp" alt="">
+			<li class="box">
+				<div class="imgFrame">
+					<img src="Pictures/plate4.webp" alt="">
+					</div>
 				<p class="describtion">Плита тротуарна велика (100x50x8)</p>
 				<p class="price">100 ₴</p>
 			</li>
-			<li class="container">
-				<img src="Pictures/plate2.webp" alt="">
+			<li class="box">
+				<div class="imgFrame">
+					<img src="Pictures/plate2.webp" alt="">
+					</div>
 				<p class="describtion">Плита тротуарна мала (50x50x8)</p>
 				<p class="price">100 ₴</p>
 			</li>
-			<li class="container">
+			<li class="box">
+				<div class="imgFrame">
 				<img src="Pictures/plate3.webp" alt="">
+				</div>
 				<p class="describtion">Плита тротуарна мала (50x50x4)</p>
-				<p class="price">100 ₴</p>
+				<div class="price">
+					<p class="number">100 ₴</p>
+					<p class="number" class="discount">100 ₴</p>
+				</div>
 			</li>
-			<li class="container">
-				<img src="Pictures/plate4.webp" alt="">
+			<li class="box">
+				<div class="imgFrame">
+					<img src="Pictures/plate4.webp" alt="">
+					</div>
 				<p class="describtion">Плита тротуарна велика (100x50x8)</p>
 				<p class="price">100 ₴</p>
 			</li>
-			<li class="container">
-				<img src="Pictures/plate2.webp" alt="">
+			<li class="box">
+				<div class="imgFrame">
+					<img src="Pictures/plate2.webp" alt="">
+					</div>
 				<p class="describtion">Плита тротуарна мала (50x50x8)</p>
 				<p class="price">100 ₴</p>
 			</li>
-			<li class="container">
-				<img src="Pictures/plate3.webp" alt="">
+			<li class="box">
+				<div class="imgFrame">
+					<img src="Pictures/plate3.webp" alt="">
+					</div>
 				<p class="describtion">Плита тротуарна мала (50x50x4)</p>
 				<p class="price">100 ₴</p>
 			</li>
@@ -91,7 +106,7 @@
 	<!-- Scripts-->
 	<script src="preloader.js"></script>
 	<script src="burger.js"></script>
-		<!-- Scripts End-->
+	<!-- Scripts End-->
 </body>
 
 </html>

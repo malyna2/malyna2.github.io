@@ -11,23 +11,8 @@ body{
     z-index: 999;
     margin-top: 60px;
 }
-#separate{
-    height: 1vh;
-    width: 10vw;
-    background-color: white;
-}
+
 img{
     width: 70vw;
     height: 44vw;
-    
-}
-#textCenter{
-    position: absolute;
-    bottom: 50vh;
-    left: 30vw;
-    height: 100px;
-    width: 100px;
-    text-align: center;
-    font-size: 7vw;
-    font-weight: bold;
 }
