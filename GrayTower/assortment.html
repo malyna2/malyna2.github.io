@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Gray Tower</title>
+	<link rel="stylesheet" type="text/css" href="assortment.css">
+	<link rel="stylesheet" type="text/css" href="header.css">
+	<link rel="icon" href="Pictures/logo_icon.png">
+</head>
+
+<body>
+	<!-- HEADER MENU FOR DESKTOPS-->
+	<div id="header">
+		<div class="container">
+			<div class="header-body">
+				<a href="index.html">
+					<div id="productive">
+						<img id="logo" src="Pictures/logo.png">
+					</div>
+				</a>
+				<nav id="navMenu">
+					<ul id="menu">
+						<li><a href="object.html">Об'єкти</a></li>
+						<li><a class="current" href="assortment.html">Асортимент</a></li>
+						<li><a href="technologies.html">Наші технології</a></li>
+						<li><a href="forPartners.html">Для партнерів</a></li>
+					</ul>
+				</nav>
+				<h2 class="current" id="phonenumber"><b>+380000000000</b></h2>
+			</div>
+		</div>
+	</div>
+
+	<!-- END DESKTOP MENU-->
+
+	<!-- START SMARPHONES MENU-->
+	<div class="header-burger">
+		<a href="index.html" class="active">GREY TOWER</a>
+		<div id="navMenu-burger">
+			<a href="object.html">Об'єкти</a>
+			<a href="assortment.html">Асортимент</a>
+			<a href="technologies.html">Наші технології</a>
+			<a href="forPartners.html">Для партнерів</a>
+		</div>
+		<a class="icon" onclick="burger()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+	<!-- END SMARPHONES MENU-->
+	<div id="content">
+		<ul class="shop">
+			<li class="box">
+				<div class="imgFrame">
+					<img src="Pictures/plate1.png" alt="">
+				</div>
+				<p class="describtion">Плита тротуарна велика (100 × 50 × 8 см)</p>
+				<p class="price">150 ₴</p>
+			</li>
+			<li class="box">
+				<div class="imgFrame">
+					<img src="Pictures/plate2.png" alt="">
+				</div>
+				<p class="describtion">Плита тротуарна мала (50 × 50 × 8 см)</p>
+				<p class="price">100 ₴</p>
+			</li>
+			<li class="box">
+				<div class="imgFrame">
+					<img src="Pictures/plate3.png" alt="">
+				</div>
+				<p class="describtion">Плита тротуарна мала (50 × 50 × 4 см)</p>
+				<p class="price">75 ₴</p>
+			</li>
+		</ul>
+	</div>
+	<script src="burger.js"></script>
+</body>
+
+</html>
