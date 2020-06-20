@@ -1,0 +1,19 @@
+#content{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1% 3% 3% 3%;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    border-radius: 10px;
+    border: rgb(119, 119, 119) solid 1px;
+}
+p{
+    font-size: 140%;
+}
+#content h1{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-bottom: #00cc00 solid 5px;
+    width: 250px;
+}

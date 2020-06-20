@@ -1,56 +1,58 @@
 img{
     width: 100%;
     height: auto;
+    max-height: 250px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 .describtion{
-    margin-top: 10%;
-    padding-left: 10px;
-    padding-right: 5px;
+    text-align: center;
+    margin: 10%;
     color: white;
 }
 .imgFrame{
     height: 230px;
 }
 .price{
+    margin-left: 35%;
+    width: 25%;
+    border-radius: 10px;
+    background-color: rgb(48, 48, 48);
+    text-align: center;
     color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: row;
-    
-}
-.number{
-    padding-left: 3px;
 }
 .box{
     border-radius: 15px;
-    background-color: rgb(82, 82, 82);
+    border: rgb(119, 119, 119) solid 1px;
+    background-color: rgb(61, 61, 61);
     list-style: none;
     width: 350px;
     height: 420px;
     font-size: 22px;
+    transition: 0.25s;
+}
+.box:hover{
+    background-color: rgb(73, 73, 73);
+    border-bottom: #00cc00 solid 5px;
 }
 .shop {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: repeat(auto-fit, 420px);
+    grid-auto-flow: row;
     grid-gap: 10px;
     align-items: center;
+    justify-items: center;
+    padding: 0;
+    margin: 0;
 }
-/* @media screen and (max-width: 1080px) and (orientation:portrait){
-    .shop{
-        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-        padding: 20px 20px;
-        margin: 0;
-        align-items: center;
-    }
+@media (max-width: 880px) , (orientation : portrait){
     .box{
-        width: 450px;
-        height: 600px;
+        font-size: 30px;
+        height: auto;
     }
-    .describtion{
-        font-size: 45px;
+    .shop{
+        grid-template-rows: repeat(auto-fit, 500px);
     }
-    .price{
-        font-size: 40px;        
-    }
-} */
+}
