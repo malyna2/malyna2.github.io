@@ -5,12 +5,12 @@ body{
     padding: 0;
 }
 #content{
-    margin-top: 8vh;
-    padding-top: 2vh;
+    margin-top: 80px;
     position: relative;
     z-index: 1; 
 }
 #header{
+    display: block;
     z-index: 999;
     position: fixed;
     width: 100%;
@@ -115,6 +115,10 @@ a {
 @media (max-width: 880px) , (orientation : portrait) {
     #header{
         display: none;
+    }
+    #content{
+        margin-top: 8vh;
+        padding-top: 2vh;
     }
     .header-burger{
         height: 8vh;
