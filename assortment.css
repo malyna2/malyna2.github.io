@@ -15,7 +15,7 @@ img{
 }
 .price{
     margin-left: 35%;
-    width: 30%;
+    width: 150px;
     border-radius: 10px;
     background-color: rgb(48, 48, 48);
     text-align: center;
@@ -47,10 +47,10 @@ img{
     padding: 0;
     margin: 0;
 }
-@media  (orientation : portrait){
+@media  (max-width: 880px) ,(orientation : portrait){
     .box{
         font-size: 30px;
-        height: 40vh;
+        height: 650px;
         width: auto;
         font-size: 50px;
     }

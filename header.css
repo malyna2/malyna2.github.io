@@ -121,7 +121,7 @@ a {
         width: 100%;
         display: block;
         color: white;
-        background-color: black;
+        background: linear-gradient(to top, #00000013, #000000a6);
         position: fixed;
         margin-top: 0;
         font-size: 32px;
@@ -133,13 +133,12 @@ a {
        display: block;
        float: right;
        height: 100vh;
-       background-color: black;
+       background: linear-gradient(to top,#161616f8,#161616f8,#161616f8,#161616f8,#161616f8,#161616f8,#161616f8,#161616f8,#161616f8,#161616f8,#00000013 );
        position: fixed;
        right: -100%;
        z-index: 999;
     }
     #navMenu-burger a{
-        background-color: black;
         color: white;
         margin-top: 50px;
         font-size: 55px;
@@ -167,7 +166,6 @@ a {
         border-bottom: #00cc00 solid 1vh;
     }
     .active{
-        background-color: black;
         color: white;
     }
     .burgers{
