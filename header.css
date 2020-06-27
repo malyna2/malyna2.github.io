@@ -133,7 +133,7 @@ a {
        display: block;
        float: right;
        height: 100vh;
-       background: linear-gradient(to top,#161616f8,#161616f8,#161616f8,#161616f8,#161616f8,#161616f8,#161616f8,#161616f8,#161616f8,#161616f8,#00000013 );
+       background: linear-gradient(to top,#161616f8,#161616f8,#161616f8,#161616f8,#161616f8,#161616f8,#161616f8,#161616f8,#161616f8,#161616f8,#161616f8,#161616f8,#161616f8,#161616f8,#00000013 );
        position: fixed;
        right: -100%;
        z-index: 999;
