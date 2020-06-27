@@ -5,7 +5,10 @@ body{
     padding: 0;
 }
 #content{
-    margin-top: 80px;
+    margin-top: 8vh;
+    padding-top: 2vh;
+    position: relative;
+    z-index: 1; 
 }
 #header{
     z-index: 999;
@@ -106,46 +109,98 @@ a {
 .header-burger{
     display: none;
 }
-
+#navMenu-burger{
+    display: none;
+}
 @media (max-width: 880px) , (orientation : portrait) {
-
     #header{
         display: none;
     }
-    #logo{
-        width: 200px;
-        height: 125px;
-    }
     .header-burger{
+        height: 8vh;
         width: 100%;
         display: block;
         color: white;
-        background-color: rgb(32, 32, 32);
-        position: relative;
+        background-color: black;
+        position: fixed;
         margin-top: 0;
-        font-size: 18px;
+        font-size: 32px;
         animation: 3s linear 1s slidein;
+        top: 0;
+        z-index: 999;
     }
-    .header-burger #navMenu-burger{
-       display: none;
+    #navMenu-burger{
+       display: block;
+       float: right;
+       height: 100vh;
+       background-color: black;
+       position: fixed;
+       right: -100%;
+       z-index: 999;
     }
-    .header-burger a{
-        background-color: rgb(32, 32, 32);
+    #navMenu-burger a{
+        background-color: black;
         color: white;
+        margin-top: 50px;
+        font-size: 55px;
+    }
+    .flex_menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .link-first{
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    .link{
         padding: 14px 16px;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    .linkPhone{
+        padding: 14px 16px;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    u{
         text-decoration: none;
-        font-size: 17px;
-        display: block;
+        border-bottom: #00cc00 solid 1vh;
     }
     .active{
-        background-color: rgb(32, 32, 32);
+        background-color: black;
         color: white;
     }
+    .burgers{
+        padding-top: 2.6vh;
+        padding-left: 40%;
+    }
+    .burger1 , .burger2, .burger3{
+        width: 7vw;
+        height: 0.5vh;
+        background-color: #00cc00;
+        border-radius: 10px;
+
+    }
+    .burger2{
+        margin-top: 0.8vh;
+    }
+    .burger3{
+        margin-top: 0.8vh;
+    }
     .header-burger .icon {
-        background: rgb(32, 32, 32);
+        /* top: 50%; */
+        background: none;       
         display: block;
         position: absolute;
-        right: 0;
         top: 0;
+        right: 0;
+        height: 100%;
+        width: 15vw;
       }
+      #mobilelogo{
+          width: auto;
+          height: 90%;
+          margin-left: 1%;
+      }
+
 }
