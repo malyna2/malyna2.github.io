@@ -15,7 +15,7 @@ img{
 }
 .price{
     margin-left: 35%;
-    width: 25%;
+    width: 30%;
     border-radius: 10px;
     background-color: rgb(48, 48, 48);
     text-align: center;
@@ -39,7 +39,7 @@ img{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-template-rows: repeat(auto-fit, 420px);
+    grid-template-rows: repeat(auto-fit, 420px, 1fr);
     grid-auto-flow: row;
     grid-gap: 10px;
     align-items: center;
@@ -47,12 +47,14 @@ img{
     padding: 0;
     margin: 0;
 }
-@media (max-width: 880px) , (orientation : portrait){
+@media  (orientation : portrait){
     .box{
         font-size: 30px;
-        height: auto;
+        height: 40vh;
+        width: auto;
+        font-size: 50px;
     }
     .shop{
-        grid-template-rows: repeat(auto-fit, 500px);
+        grid-template-rows: repeat(2,);
     }
 }

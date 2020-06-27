@@ -17,3 +17,9 @@ p{
     border-bottom: #00cc00 solid 5px;
     width: 250px;
 }
+@media  (orientation : portrait){
+    #content h1{
+        width: 50vw;
+        font-size: 60px;
+    }
+}

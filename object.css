@@ -1,3 +1,6 @@
+::-webkit-scrollbar {
+    width: 0px;
+  }
 .slideshow-container{
     max-width: 80%;
     position: relative;
@@ -13,7 +16,7 @@
     font-weight: bold;
     font-size: 40px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 10px;
     text-align: center;
     justify-content: center;
     color: rgb(255, 255, 255);
@@ -22,7 +25,6 @@
     user-select: none;
 }
 .next{
-    border-radius: 3px 0 0 3px;
     margin-left: 82.2%;
 }
 .prev:hover, .next:hover{
@@ -83,6 +85,7 @@ h1{
     }
     h1{
         margin: 10% 3% 3%;
+        font-size: 55px;
 
     }
     .prev, .next {
